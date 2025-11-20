@@ -19,4 +19,14 @@ Features:
 
 ## Outputs
 - `active_password`
+
 - `backup_password`
+
+## Terraform module with two random passwords (active + backup) with:
+
+1. Rotation only for backup
+2. Optional swapping of roles
+3. Idempotent runs (no regeneration unless triggered externally)
+4. Substrate-agnostic
+5. Max 2 terraform apply cycles
+6. Terraform as the core tool (with optional external helper if needed)
